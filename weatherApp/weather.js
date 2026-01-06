@@ -32,6 +32,7 @@ async function getWeather(cityName) {
 
     searchBar.value = '';
     weatherResult.style.display = 'block';
+    noSearchDisplay.style.display = 'none';
     console.log(response);
     }catch(error){
         alert('invalid weather credential')
@@ -44,4 +45,5 @@ document.addEventListener('keydown', (e) =>{
         getWeather(searchBar.value);
     }
 })
+
 
